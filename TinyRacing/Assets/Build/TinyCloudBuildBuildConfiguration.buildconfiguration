@@ -1,0 +1,61 @@
+{
+    "Dependencies": [
+        "GlobalObjectId_V1-1-a25f9bf585972264c84d293ca590288e-93214019566545601-0"
+    ],
+    "Components": [
+        {
+            "$type": "Unity.Build.Common.GeneralSettings, Unity.Build",
+            "ProductName": "Product Name",
+            "CompanyName": "Company Name"
+        },
+        {
+            "$type": "Unity.Build.Common.SceneList, Unity.Build",
+            "$version": 1,
+            "BuildCurrentScene": false,
+            "SceneInfos": [
+                {
+                    "Scene": "GlobalObjectId_V1-1-ead95ae8a6288294c98220eeaff82fe6-102900000-0",
+                    "AutoLoad": true
+                }
+            ]
+        },
+        {
+            "$type": "Unity.Tiny.Rendering.Settings.TinyShaderSettings, Unity.Tiny.Rendering.Authoring",
+            "PackageShadersForAllPlatforms": true
+        },
+        {
+            "$type": "Unity.Build.DotsRuntime.DotsRuntimeBuildProfile, Unity.Build.DotsRuntime",
+            "Target": "tinycloudbuild",
+            "Configuration": 2,
+            "UseNewPipeline": false,
+            "PipelineConstructor": {
+                "$type": "Unity.Tiny.CloudBuild.Build.CloudBuildPipelineConstructor, Unity.Tiny.CloudBuild.Build"
+            }
+        },
+        {
+            "$type": "Unity.Tiny.CloudBuild.Build.CloudBuildCommonSettings, Unity.Tiny.CloudBuild.Build",
+            "BuildInfo": {
+                "GameInfo": {
+                    "id": "5f632c8b2471a90027dc0ebf",
+                    "name": "zxdvZSDgv",
+                    "description": "vzsrdefgvd",
+                    "ownerId": "5f58adae2471a90027dc0eb5",
+                    "orgId": "18966918669141",
+                    "projectId": "deb028d7-1153-48f0-bd8d-bc4c27b53760"
+                },
+                "Channel": 1,
+                "GameConfig": "GlobalObjectId_V1-0-00000000000000000000000000000000-0-0",
+                "ProjectConfig": "GlobalObjectId_V1-0-00000000000000000000000000000000-0-0"
+            }
+        },
+        {
+            "$type": "Unity.Entities.Runtime.Build.DotsRuntimeBurstSettings, Unity.Entities.Runtime.Build",
+            "EnableBurst": false
+        },
+        {
+            "$type": "Unity.Build.Web.DotsRuntime.EmscriptenSettings, Unity.Build.Web.DotsRuntime",
+            "EmccCmdLine": " -s TOTAL_MEMORY=512MB -s ALLOW_MEMORY_GROWTH=1",
+            "SingleFileOutput": false
+        }
+    ]
+}
